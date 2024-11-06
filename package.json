@@ -1,0 +1,20 @@
+{
+  "name": "devtinder",
+  "version": "1.0.0",
+  "description": "This repository is dedicated to practicing and experimenting with various backend concepts in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Ashok",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+ 
+}
