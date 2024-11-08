@@ -3,19 +3,12 @@ const express = require("express");
 
 const app = express(); //you are creating new server
 
-app.get("/",(req, res) => { //route
-    res.send("only slash badako !"); //route handler
+app.get("/user",(req, res) => { 
+    res.send("welcome to user page"); //sending data
 });
 
-app.get("/test",(req, res) => {
-    res.send("test request ra badako ");
-});
-
-app.get("/hello",(req, res) => {
-    res.send("the hello request !");
-});
-
-app.listen(7777, ()=> {
-    console.log("server is successfully listening on port 7777...")
+const PORT = 8000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
 
